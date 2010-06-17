@@ -24,8 +24,8 @@ A Sinclair ZX Spectrum Emulator, designed to work both in framebuffer
 and X.
 
 %description -l pl.UTF-8
-Emulator Sinclair ZX Spectrum, działający zarówno z buforem ramek jak
-i systemem X-Window.
+Emulator Sinclair ZX Spectrum, działający zarówno z buforem ramki
+(framebuffer) jak i z systemem X-Window.
 
 %prep
 %setup -q
