@@ -1,0 +1,31 @@
+--- fbzx-2.4.1/Makefile~	2010-06-17 12:26:38.278095453 +0200
++++ fbzx-2.4.1/Makefile	2010-06-17 12:26:32.878096001 +0200
+@@ -8,18 +8,16 @@
+ 	rm fbzx *.o *~
+ 
+ install:
+-	rm -f /usr/bin/fbzx
+-	cp fbzx /usr/local/bin
+-	mkdir -p /usr/local/share/fbzx
+-	mkdir -p /usr/local/share/spectrum-roms
+-	mkdir -p /usr/share/applications
+-	mkdir -p /usr/share/pixmaps
+-	mkdir -p /usr/local/share/doc/fbzx
+-	cp spectrum-roms/* /usr/local/share/spectrum-roms
+-	cp keymap.bmp /usr/local/share/fbzx
+-	cp fbzx.desktop /usr/share/applications
+-	cp fbzx.svg /usr/share/pixmaps
+-	cp AMSTRAD CAPABILITIES COPYING FAQ README README.TZX VERSIONS /usr/local/share/doc/fbzx/
++	mkdir -p $(DESTDIR)/usr/bin
++	cp fbzx $(DESTDIR)/usr/bin
++	mkdir -p $(DESTDIR)/usr/share/fbzx
++	mkdir -p $(DESTDIR)/usr/share/fbzx/spectrum-roms
++	mkdir -p $(DESTDIR)/usr/share/applications
++	mkdir -p $(DESTDIR)/usr/share/pixmaps
++	cp spectrum-roms/* $(DESTDIR)/usr/share/fbzx/spectrum-roms
++	cp keymap.bmp $(DESTDIR)/usr/share/fbzx
++	cp fbzx.desktop $(DESTDIR)/usr/share/applications
++	cp fbzx.svg $(DESTDIR)/usr/share/pixmaps
+ 
+ uninstall:
+ 	rm -f /usr/local/bin/fbzx
