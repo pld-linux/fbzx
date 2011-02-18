@@ -48,6 +48,7 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT
 
 svg2png $RPM_BUILD_ROOT%{_pixmapsdir}/%{name}.svg $RPM_BUILD_ROOT%{_pixmapsdir}/%{name}.png
+
 # useless (svg converted to png)
 %{__rm} $RPM_BUILD_ROOT%{_pixmapsdir}/%{name}.svg
 
