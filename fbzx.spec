@@ -1,12 +1,12 @@
 Summary:	A Sinclair ZX Spectrum Emulator
 Summary(pl.UTF-8):	Emulator Sinclair ZX Spectrum
 Name:		fbzx
-Version:	2.4.2
+Version:	2.5.0
 Release:	1
 License:	GPL v3+
 Group:		Applications/Emulators
 Source0:	http://www.rastersoft.com/descargas/%{name}-%{version}.tar.bz2
-# Source0-md5:	08a37c4a24686c9df4749432c0abdb2a
+# Source0-md5:	c3abdfe41a9d6829c50ea62d25c4526e
 Patch0:		%{name}-Makefile.patch
 Patch1:		%{name}-install.patch
 Patch2:		%{name}-desktop.patch
